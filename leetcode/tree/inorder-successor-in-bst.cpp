@@ -23,7 +23,7 @@ class Solution {
       return nullptr;
     }
     if (root->val <= p->val) {
-      inorderSuccessor(root->right, p);
+      return inorderSuccessor(root->right, p);
     } else {
       TreeNode *successor = inorderSuccessor(root->left, p);
       return successor ? successor : root;
